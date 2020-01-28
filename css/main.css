@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   font-family: 'Karla', sans-serif; }
 
-header {
+.header {
   background-color: #2d2640;
   color: white; }
 
@@ -76,7 +76,9 @@ header {
   display: flex;
   flex-direction: column; }
   .banner-section-left .link {
-    flex: 0 0 auto;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin-top: 30px; }
 
 .banner-section-right {
@@ -85,3 +87,16 @@ header {
   width: 100%; }
   .banner-section-right img {
     width: 100%; }
+
+.footer {
+  display: flex;
+  justify-content: space-around; }
+  .footer header {
+    display: flex;
+    justify-content: space-between; }
+  .footer li {
+    list-style: none; }
+
+.services-box {
+  display: flex;
+  justify-content: space-around; }
