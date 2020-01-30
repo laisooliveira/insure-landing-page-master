@@ -24,7 +24,7 @@ body {
     padding: 0 20vh;
 }
 
-.nav {
+.navbar {
     height: 70px;
     width: 100%;
     display: flex;
@@ -35,8 +35,12 @@ body {
 
 .nav-item {
     display: inline-block;  
-    color: $dark-grayish-violet;
     font-weight: 700;
+
+    a {
+        color: $dark-grayish-violet;
+        text-decoration: none;
+    }
 
     &:not(:last-child) {
         margin-right: 20px;
@@ -118,15 +122,32 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    background-color: $light-gray;
 
     header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid $dark-grayish-violet;
     }
     
     li {
         list-style: none;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        
+
+        li:first-child {
+            margin-bottom: 25px;
+            color: $dark-grayish-violet;
+        }
     }
 }
 
